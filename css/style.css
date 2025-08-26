@@ -1,0 +1,14 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+
+::selection {
+  background: #b2ffc4;
+  color: black;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Hind Madurai", sans-serif;
+}
