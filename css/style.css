@@ -14,7 +14,12 @@ body {
 }
 
 /* base style */
-button{
+button {
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+a img {
+  user-select: none;
+  pointer-events: none;
 }
