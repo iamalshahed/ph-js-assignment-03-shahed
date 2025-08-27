@@ -12,3 +12,9 @@ body {
   overflow-x: hidden;
   font-family: "Hind Madurai", sans-serif;
 }
+
+/* base style */
+button{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
