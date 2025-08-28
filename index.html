@@ -21,8 +21,8 @@
 <body class="bg-green-50">
 
     <!-- header -->
-    <header class="max-w-[1450px] w-full mx-auto px-4">
-        <nav class="flex items-center justify-between py-4 sm:py-6">
+    <header class="w-full bg-white border-b-2 border-gray-200 sticky top-0 left-0 z-50">
+        <nav class="max-w-[1450px] w-full mx-auto px-4 flex items-center justify-between py-4 sm:py-6">
             <!-- logo -->
             <div class="">
                 <a href="/" class="">
@@ -40,7 +40,7 @@
 
                 <!-- 2 -->
                 <div class="flex items-center gap-1 sm:gap-2.5 py-2 sm:py-2.5 px-2.5 sm:px-5 bg-green-400/10 rounded-[50px] text-black text-xs sm:text-base font-black">
-                    <span>100</span>
+                    <span id="coin__value">100</span>
                     <img src="./assets/coin.png" alt="coin" class="w-4 sm:w-6 h-auto">
                 </div>
 
@@ -75,7 +75,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:col-span-8 xl:col-span-9 gap-7">
 
                 <!-- single card - 1 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -109,7 +109,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -118,7 +118,7 @@
                 </div>
 
                 <!-- single card - 2 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -152,7 +152,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -161,7 +161,7 @@
                 </div>
 
                 <!-- single card - 3 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -195,7 +195,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -204,7 +204,7 @@
                 </div>
 
                 <!-- single card - 4 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -238,7 +238,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -247,7 +247,7 @@
                 </div>
 
                 <!-- single card - 5 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -281,7 +281,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -290,7 +290,7 @@
                 </div>
 
                 <!-- single card - 6 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -324,7 +324,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -333,7 +333,7 @@
                 </div>
 
                 <!-- single card - 7 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -367,7 +367,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -376,7 +376,7 @@
                 </div>
 
                 <!-- single card - 8 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -410,7 +410,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
@@ -419,7 +419,7 @@
                 </div>
 
                 <!-- single card - 9 -->
-                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full">
+                <div class=" p-4 sm:p-8 bg-white rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] flex flex-col justify-between h-full" id="btn__call__parent">
 
                     <!-- top flex -->
                     <div class="flex items-center justify-between mb-4">
@@ -453,7 +453,7 @@
                             Copy
                         </button>
 
-                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500">
+                        <button class="flex flex-row items-center justify-center gap-1.5 w-full px-4 py-2.5 bg-green-600 rounded-lg text-white text-base font-normal hover:bg-green-500 btn__call" id="btnCall">
                             <span><i class="ri-phone-line"></i></span>
                             Call
                         </button>
