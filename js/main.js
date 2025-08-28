@@ -1,7 +1,9 @@
+// select elements
 let loveValue = Number(document.getElementById("love__value").innerText);
 const heartIcons = document.getElementsByClassName("heart__icon");
-
 const btnsCall = document.getElementsByClassName("btn__call");
+const copyCount = document.getElementById("copy__count");
+const btnsCopyNumber = document.getElementsByClassName("btn__copy__number");
 
 // when clicked heart icon
 for (let heartIcon of heartIcons) {
@@ -34,18 +36,16 @@ for (let btnCall of btnsCall) {
   });
 }
 
-/*
+// copy functionality
+for (let btnCopyNumber of btnsCopyNumber) {
+  btnCopyNumber.addEventListener("click", function () {
+    // getCardNumber
+    let getCopyNumber =
+      btnCopyNumber.parentNode.parentNode.childNodes[11].childNodes[1]
+        .innerText;
 
-
-    if (coinValue <= 100) {
-      console.log(
-        btnCall.parentNode.parentNode.childNodes[7].childNodes[1].innerText
-      );
-
-      console.log(
-        btnCall.parentNode.parentNode.childNodes[11].childNodes[1].innerText
-      );
-    } else {
-      alert("nope");
-    }
-      */
+    navigator.clipboard.writeText(getCopyNumber);
+    alert(`The number has been copied: ${getCopyNumber}`);
+    copyCount.innerText++;
+  });
+}
