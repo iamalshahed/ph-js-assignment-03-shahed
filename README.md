@@ -14,4 +14,9 @@
 --- 
 
 - What is Event Bubbling and how does it work?
-👉 Event Bubbling means that when an event occurs in a child element, it is first captured in that child element, then it continues to rise up to its parent → grandparent → document.
+👉 **Event Bubbling** means that when an event occurs in a child element, it is first captured in that child element, then it continues to rise up to its parent → grandparent → document.
+
+---
+
+- What is Event Delegation in JavaScript? Why is it useful?
+👉 **Event Delegation** is the process of placing an event listener on the parent element, so that even if an event occurs on a child element, it can be caught from the parent.
