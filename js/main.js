@@ -24,6 +24,10 @@ for (let btnCall of btnsCall) {
     const serviceNumber =
       btnCall.parentNode.parentNode.childNodes[11].childNodes[1].innerText;
 
+    let historyParent = document.getElementById("history__parent");
+
+    const curentTime = new Date().toLocaleTimeString();
+
     if (coinValue < 20) {
       alert(
         "❌ You don't have enough coins. You need at least 20 coins to make a call."
@@ -32,6 +36,23 @@ for (let btnCall of btnsCall) {
       alert(`📞 Calling ${serviceTitle} ${serviceNumber} ...`);
       let updateCoinValue = (coinValue -= 20);
       getCoinValue.innerText = updateCoinValue;
+
+      // add history
+      let newElm = document.createElement("div");
+      newElm.innerHTML = `<div class="p-4 bg-neutral-50 rounded-lg sm:flex items-center justify-between gap-4">
+                        <!-- service name and number -->
+                        <div class="">
+                            <strong class="text-neutral-900 text-lg font-semibold">${serviceTitle}</strong>
+                            <p class="text-zinc-600 text-lg font-normal">${serviceNumber}</p>
+                        </div>
+
+                        <!-- time -->
+                        <div class="">
+                            <p class="text-neutral-900 text-lg font-normal">${curentTime}</p>
+                        </div>
+                    </div>`;
+
+      historyParent.appendChild(newElm);
     }
   });
 }
