@@ -10,3 +10,8 @@
 👉 A new element is created with document.createElement("div")
 👉 Then write something inside using **element.innerText** or **element.innerHTML**
 👉 Finally **appendChild()** is used to insert it into any parent element in the DOM
+
+--- 
+
+- What is Event Bubbling and how does it work?
+👉 Event Bubbling means that when an event occurs in a child element, it is first captured in that child element, then it continues to rise up to its parent → grandparent → document.
