@@ -57,6 +57,11 @@ for (let btnCall of btnsCall) {
   });
 }
 
+document.getElementById("btn__clear").addEventListener("click", function () {
+  let historyParent = document.getElementById("history__parent");
+  historyParent.innerHTML = "";
+});
+
 // copy functionality
 for (let btnCopyNumber of btnsCopyNumber) {
   btnCopyNumber.addEventListener("click", function () {
