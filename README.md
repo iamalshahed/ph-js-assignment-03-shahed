@@ -3,3 +3,10 @@
 👉 **getElementsByClassName:** Returns all elements that have that className together as an HTMLCollection.
 👉 **querySelector:** Search for elements using CSS selectors. It only returns the first matching element.
 👉 **querySelectorAll:** Returns all elements searched for with a CSS selector together, in the form of a NodeList.
+
+---
+
+- How do you create and insert a new element into the DOM?
+👉 A new element is created with document.createElement("div")
+👉 Then write something inside using **element.innerText** or **element.innerHTML**
+👉 Finally **appendChild()** is used to insert it into any parent element in the DOM
